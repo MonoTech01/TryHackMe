@@ -1,1 +1,1 @@
-![Profile](/THM/THM.png).
+![Profile](/THM/THM.png)
