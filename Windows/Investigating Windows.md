@@ -1,4 +1,4 @@
-# Topic: Windows Forensics - Level Easy
+# Topic: Windows Forensics - Level Easy - Sys Admin 
 
 # Connection
 via RDP - Remote Desktop Connnection if you are not in the target machine yet!
@@ -24,6 +24,14 @@ Search "Regedit" for Registry Editor in search bar.
 HKEY_LOCAL_MACHINE > SOFTWARE > Microsoft > Windows > CurrentVersion > Run
 
 When you are in "Run" location, pls check the ip address of UpdateSvc = reveals the IP address that the remote machine connects to when it starts.
+
+# What two accounts had administrative privileges (other than the Administrator user)?
+### Command: net localgroup administrators
+
+# Whats the name of the scheduled task that is malicous? What file was the task trying to run daily?
+### Command:  Get-ScheduledTask
+### Command:  Get-ScheduledTask | Where TaskName -EQ “[file's name]”
+
  
 
 
