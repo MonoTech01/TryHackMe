@@ -26,15 +26,22 @@ HKEY_LOCAL_MACHINE > SOFTWARE > Microsoft > Windows > CurrentVersion > Run
 When you are in "Run" location, pls check the ip address of UpdateSvc = reveals the IP address that the remote machine connects to when it starts.
 
 # What two accounts had administrative privileges (other than the Administrator user)?
-### Command: net localgroup administrators
+### Command: 
+    net localgroup administrators
 
 # Whats the name of the scheduled task that is malicous? What file was the task trying to run daily + What port did this file listen locally for?
 
-### Command:  Get-ScheduledTask
-### Command:  $task = Get-ScheduledTask | Where TaskName -EQ “[file's name]”
-              $task.actions
+### Command:  
+    Get-ScheduledTask
+### Command:  
+    $task = Get-ScheduledTask | Where TaskName -EQ “[file's name]”
+    $task.actions
 
- 
+# When did [a user] last logon?
+### Command: 
+    net user [a username]
+    net user [a username] | findstr "Last" #another way
+    
 
 
 
