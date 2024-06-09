@@ -28,9 +28,11 @@ When you are in "Run" location, pls check the ip address of UpdateSvc = reveals 
 # What two accounts had administrative privileges (other than the Administrator user)?
 ### Command: net localgroup administrators
 
-# Whats the name of the scheduled task that is malicous? What file was the task trying to run daily?
+# Whats the name of the scheduled task that is malicous? What file was the task trying to run daily + What port did this file listen locally for?
+
 ### Command:  Get-ScheduledTask
-### Command:  Get-ScheduledTask | Where TaskName -EQ “[file's name]”
+### Command:  $task = Get-ScheduledTask | Where TaskName -EQ “[file's name]”
+              $task.actions
 
  
 
